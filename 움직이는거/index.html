@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>우왁굳의 피아노교실</title>
+	<style type="text/css">
+		#paper{position: absolute; width: 600px; height: 100px; margin-left: 400px; margin-top: 150px; display: block;}
+		#doc{position: absolute; width: 30px; height: 90px; display: block; margin-top: 195px; margin-left: 510px;}
+		#rec{position: absolute; width: 40px; height: 85px; display: block; margin-top: 175px; margin-left: 560px;}
+		#mic{position: absolute; width: 30px; height: 30px; display: block; margin-top: 225px; margin-left: 610px;}
+		#pac{position: absolute; width: 30px; height: 80px; display: block; margin-top: 165px; margin-left: 660px;}
+		#solc{position: absolute; width: 30px; height: 30px; display: block; margin-top: 215px; margin-left: 710px;}
+		#rac{position: absolute; width: 40px; height: 85px; display: block; margin-top: 205px; margin-left: 760px;}
+		#sic{position: absolute; width: 40px; height: 85px; display: block; margin-top: 195px; margin-left: 810px;}
+		#ddoc{position: absolute; width: 40px; height: 85px; display: block; margin-top: 122px; margin-left: 860px;}
+		#dop{position: absolute; width: 200px; display: block; margin-top: 290px; margin-left: 600px; opacity: 0;}
+		#rep{position: absolute; width: 200px; display: block; margin-top: 290px; margin-left: 600px; opacity: 0;}
+		#mip{position: absolute; width: 200px; display: block; margin-top: 290px; margin-left: 600px; opacity: 0;}
+		#pap{position: absolute; width: 200px; display: block; margin-top: 260px; margin-left: 600px; opacity: 0;}
+		#solp{position: absolute; width: 200px; display: block; margin-top: 290px; margin-left: 600px; opacity: 0;}
+		#rap{position: absolute; width: 200px; display: block; margin-top: 290px; margin-left: 600px; opacity: 0;}
+		#sip{position: absolute; width: 200px; display: block; margin-top: 290px; margin-left: 600px; opacity: 0;}
+		#ddop{position: absolute; width: 200px; display: block; margin-top: 290px; margin-left: 600px; opacity: 0;}
+
+		@keyframes blink{0%{opacity: 1;} 100%{opacity: 1;}}
+
+	</style>
+</head>
+<body>
+	<img src="paper.png" id="paper">
+	<img src="mi.png" id="doc">
+	<img src="ra.png" id="rec">
+	<img src="pa.png" id="mic">
+	<img src="re.png" id="pac">
+	<img src="do.png" id="solc">
+	<img src="si.png" id="rac">
+	<img src="ddo.png" id="sic">
+	<img src="sol.png" id="ddoc">
+
+	<img src="do.jpg" id="dop">
+	<img src="re.jpg" id="rep">
+	<img src="mi.jpg" id="mip">
+	<img src="pa.jpg" id="pap">
+	<img src="sol.jpg" id="solp">
+	<img src="ra.jpg" id="rap">
+	<img src="si.jpg" id="sip">
+	<img src="ddo.jpg" id="ddop">
+
+	<audio id="dom">
+		<source src="do.mp3" type="audio/mp3">
+	</audio>		
+	<audio id="rem">
+		<source src="re.mp3" type="audio/mp3">
+	</audio>
+	<audio id="mim">
+		<source src="mi.mp3" type="audio/mp3">
+	</audio>
+	<audio id="pam">
+		<source src="pa.mp3" type="audio/mp3">
+	</audio>
+	<audio id="solm">
+		<source src="sol.mp3" type="audio/mp3">
+	</audio>
+	<audio id="ram">
+		<source src="ra.mp3" type="audio/mp3">
+	</audio>
+	<audio id="sim">
+		<source src="si.mp3" type="audio/mp3">
+	</audio>
+	<audio id="ddom">
+		<source src="ddo.mp3" type="audio/mp3">					
+	</audio>			
+
+	<script type="text/javascript">
+		doc.onclick = function(){
+			dom.play()
+			dop.style.opacity = "1" 
+			rep.style.opacity = "0"
+			mip.style.opacity = "0"
+			pap.style.opacity = "0"
+			solp.style.opacity = "0"
+			rap.style.opacity = "0"
+			sip.style.opacity = "0"
+			ddop.style.opacity = "0"
+		}
+		rec.onclick = function(){
+			rem.play()
+			dop.style.opacity = "0"
+			rep.style.opacity = "1"
+			mip.style.opacity = "0"
+			pap.style.opacity = "0"
+			solp.style.opacity = "0"
+			rap.style.opacity = "0"
+			sip.style.opacity = "0"
+			ddop.style.opacity = "0"
+		}
+		mic.onclick = function(){
+			mim.play()
+			dop.style.opacity = "0" 
+			rep.style.opacity = "0"
+			mip.style.opacity = "1"
+			pap.style.opacity = "0"
+			solp.style.opacity = "0"
+			rap.style.opacity = "0"
+			sip.style.opacity = "0"
+			ddop.style.opacity = "0"
+		}
+		pac.onclick = function(){
+			pam.play()
+			dop.style.opacity = "0" 
+			rep.style.opacity = "0"
+			mip.style.opacity = "0"
+			pap.style.opacity = "1"
+			solp.style.opacity = "0"
+			rap.style.opacity = "0"
+			sip.style.opacity = "0"
+			ddop.style.opacity = "0"
+		}
+		solc.onclick = function(){
+			solm.play()
+			dop.style.opacity = "0" 
+			rep.style.opacity = "0"
+			mip.style.opacity = "0"
+			pap.style.opacity = "0"
+			solp.style.opacity = "1"
+			rap.style.opacity = "0"
+			sip.style.opacity = "0"
+			ddop.style.opacity = "0"
+		}
+		rac.onclick = function(){
+			ram.play()
+			dop.style.opacity = "0" 
+			rep.style.opacity = "0"
+			mip.style.opacity = "0"
+			pap.style.opacity = "0"
+			solp.style.opacity = "0"
+			rap.style.opacity = "1"
+			sip.style.opacity = "0"
+			ddop.style.opacity = "0"
+		}
+		sic.onclick = function(){
+			sim.play()
+			dop.style.opacity = "0" 
+			rep.style.opacity = "0"
+			mip.style.opacity = "0"
+			pap.style.opacity = "0"
+			solp.style.opacity = "0"
+			rap.style.opacity = "0"
+			sip.style.opacity = "1"
+			ddop.style.opacity = "0"
+		}
+		ddoc.onclick = function(){
+			ddom.play()
+			ddop.style.opacity = "1"
+			dop.style.opacity = "0" 
+			rep.style.opacity = "0"
+			mip.style.opacity = "0"
+			pap.style.opacity = "0"
+			solp.style.opacity = "0"
+			rap.style.opacity = "0"
+			sip.style.opacity = "0"
+		}
+			
+			
+
+
+		
+	</script>
+</body>
+</html>
